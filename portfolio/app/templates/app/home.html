@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About Me{% endblock title %}
+{% block content %}
+<div class=" mt-5">
+ <div class="text-center">
+  <img src="{% static 'app/images/arif.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+ </div>
+ <div class=" mt-0 text-white-50  mx-5 text-justify">
+  <h1 class="font-weight-bold st-font">Hey,</h1>
+  <div class="px-4" style="line-height:2rem;">
+   <p style="text-indent:100px;"> Hi, I'm <b
+   class="text-warning">Arif Chaudhary</b> a passionate self-taught Programmer and Full Stack Web Developer.I am very dedicated towards my work and i want to do a job with an
+   organisation which gives me the opportunity to improve my skills along with the organisation objective.</p>
+   <p>My objective are very clear. I want to live a perfect life and want to see myself as a good renowned person 
+   with achievments in the field of Computer Science. </p>
+   <p>My tech stack contains various technologies & languages such as :
+  Advance python, django, rest APIs, Html, css, bit of Javascript, postgresql, sql queries, jQuery, Ajax
+  optimised django ORM, GUI, version controlling like git. Stack keeps on getting pushed.</p>
+   <p> Since i earning my master in Computer Application from Chandigarh University. I have
+   done my training in python  at <b class="text-warning">Jspider institute Bangalore</b>, one of biggest institute
+    in Bangalore.</p>
+  </div>
+ </div>
+  <div class="text-center">
+  
+   <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a> &#160
+   <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a> &#160 &#160 
+   <a href="https://github.com/ArifChaudhary" class="btn btn-outline-success my-3">My Work</a> &#160 &#160
+   <a href="https://www.linkedin.com/in/arif-chaudhary-0510b6127/" class="btn btn-style btn-light ml-2">Download CV <i class="fas fa-download"></i></a>
+  </div>
+  
+</div>
+
+{% endblock content %}

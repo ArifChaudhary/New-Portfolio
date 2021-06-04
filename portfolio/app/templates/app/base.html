@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arif | {% block title %} {% endblock title %} </title>
+    <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    {% block appcss %}
+    <link rel="stylesheet" href="{% static 'app/css/core.css' %}">
+    {% endblock appcss %}
+</head>
+<body>
+ <div class="container-fluid bg-dark">
+  <div class="row">
+   <div class="col-sm-2">
+    {% include 'app/sidebar.html' %}
+   </div>
+   <div class="col-sm-10">
+     {% block content %} {% endblock content %} 
+   </div>
+  </div>
+ </div>
+
+ <!-- Footer -->
+<footer class="bg-light">
+    <section class="w3l-footers-1">
+        <div class="footer py-3">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-lg-8 footer-left">
+                            <p class="m-0">Copyright &copy; 2021 Arif Chaudhary. All Rights Reserved. &#160 Built with <i class="fa fa-heart text-danger"></i> in Django By <a href="https://github.com/ArifChaudhary">Arif Chaudhary</a></p>
+                            
+                        </div>
+                        <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3"> 
+                          <a href="https://twitter.com/_ArifChaudhary" target="_blank" ><i class="fab fa-twitter  mr-5"></i></a> &#160
+                          <a href="https://www.linkedin.com/in/arif-chaudhary-0510b6127/" target="_blank"><i class="fab fa-linkedin  mr-5"></i></a> &#160
+                          <a href="https://github.com/ArifChaudhary/" target="_blank"><i class="fab fa-github mr-5"></i></a> &#160
+                          <a href="https://www.instagram.com/_arifchaudhary/" target="_blank"><i class="fab fa-instagram  mr-5"></i></a> &#160
+                          <a href="https://www.ecoderpoint.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!-- //Footer --> 
+
+
+<script src="{% static 'app/js/jquery.js' %}"></script>
+<script src="{% static 'app/js/popper.js' %}"></script>
+<script src="{% static 'app/js/all.min.js' %}"></script>  
+<script src="{% static 'app/js/bootstrap.js' %}"></script>    
+</body>
+</html>

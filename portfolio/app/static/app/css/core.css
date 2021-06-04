@@ -1,0 +1,39 @@
+/* font */
+.st-font {
+    font-family: "Satisfy";
+}
+html,
+body{
+    height: 100%;
+    /*background-color: rgb(136, 125, 125); */
+   
+}
+.container-fluid{
+    min-height: 100%;
+}
+/* Services Icon color */
+.i-color{
+    /*color: chartreuse; */
+    color: grey;
+}
+/* Services Subtitle Color */
+.ss-color{
+    color: silver;
+}
+
+a.nav-link{
+    /*color: whitesmoke; */
+    color: darkgray;
+    font-weight: bold;
+}
+
+a.nav-link:hover{
+    color: rgb(94, 173, 94);
+   /* background-color: #e9cd79; */
+}
+
+a.nav-link.active{
+    color: black;
+    background-color: #ffc107;
+    font-weight: bold;
+}

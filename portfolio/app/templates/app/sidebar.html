@@ -1,0 +1,24 @@
+{% load static %}
+{% block title %}Home{% endblock title %}
+<!--border horizontal-->
+<div class="border-end border-success border-1  h-100 "> 
+<!--
+<div <span class="border-end border-info h-100"></span>> -->
+    <div class="text-center">
+     <img src="{% static 'app/images/img1.jpg' %}" alt="ProfilePic" class="img-fluid rounded-circle mt-5"
+     width="100px" height="100px">
+     <h3 class="text-muted mt-3 st-font ">Arif Chaudhary</h3>
+     </div>
+     <!--border under profile name-->
+    <div <span class="text-warning  border-top border-success border-1"></span> 
+    <!--<hr class="text-warning border border-light">-->
+    <nav class="nav flex-column text-left  mt-2">
+     <a href="{% url 'home' %}" class="nav-link " {{home}}>  ABOUT ME </a>
+     <a href="{% url 'services' %}" class="nav-link " {{services}}> SERVICES</a>
+     <a href="{% url 'skill' %}" class="nav-link " {{skill}}> SKILLS & HOBBIES</a>
+     <a href="https://www.ecoderpoint.com" class="nav-link "> BLOGS </a>
+     <a href="{% url 'contact' %}" class="nav-link " {{contact}}> CONTACT ME  </a>
+     </div>
+    </nav>
+
+</div>
